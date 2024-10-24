@@ -42,6 +42,7 @@ def get_final_prompt(prompt):
     - Cavabını sadə dildə yaz.
     - Lazım olduqda, izahını nümunə ilə dəstəklə.
     - Cavabı mümkün qədər ətraflı və dolğun yaz.
+    - Verilən sual ilə məlumatlar uyğun deyilsə, cavablama.
     
     Sual: {prompt}
     Məlumatlar: {context_data}
