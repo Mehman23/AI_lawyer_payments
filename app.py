@@ -51,8 +51,8 @@ def get_final_prompt(prompt):
     return final_prompt
 
 for message in st.session_state.messages[1:]:
-   with st.chat_message(message["role"]):
-      st.markdown(message["content"])
+   with st.chat_message(message["role"], avatar="👨🏻"):
+      st.markdown(message["content"], avatar="🤖")
 
 if prompt := st.chat_input("Sualınızı yazın..."):
     st.chat_message("user", avatar="👨🏻").markdown(prompt)
